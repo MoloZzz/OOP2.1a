@@ -22,7 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
     typeDate = "dd.MM.yyyy";
     typeTime = "hh:mm";
 
-    plog::init(plog::verbose,"C:\\Users\\user\\Documents\\GitHub\\OOP2\\plogBase.txt");
+    plog::init(plog::verbose,"C:\\Users\\user\\Documents\\GitHub\\OOP2.1a\\plogBase.txt");
 
     PLOG_VERBOSE << "PROGRAM OPENED";
 
@@ -34,8 +34,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-std::vector<timeT> mainList;
-
+DataList GlobalList;
 
 
 void MainWindow::TimerSlot()
@@ -48,80 +47,29 @@ time = QTime::currentTime();
 time.setHMS(time.hour(),time.minute(),time.second(),0);
 
 
-if(!mainList.empty()){
 
-int pos = 0;
+bool yn = false;
 
-for(const timeT &child: mainList){
+checks check;
 
-    if(child.date == date && child.time == time){
-    PLOG_DEBUG << "time and date = timeT";
+check.checkTimeT(GlobalList,date,time,yn);
 
-        //2 variants timer and alarm
-        if(child.type == "budilnik"){
-
-            PLOG_DEBUG << "timeT budilnik time";
-            if(child.info != ""){
-
-              PLOG_DEBUG << "alarm budilnik with info,QMessageBox";
-
-              MessageBeep(MB_ICONEXCLAMATION);
-              QMessageBox::about(this,"Спрацював будильник!",child.info);
-
-
-            }else{
-
-                PLOG_DEBUG << "alarm budilnik without info,QMessageBox";
-                MessageBeep(MB_ICONEXCLAMATION);
-                QMessageBox::about(this,"Спрацював будильник!","Спрацював будильник без опису");
-
-            }
-        }else if(child.type == "timer"){
-
-            PLOG_DEBUG << "timeT timer time";
-            if(child.info != ""){
-
-              PLOG_DEBUG << "alarm timer with info,QMessageBox,tried to open file " + child.info;
-              MessageBeep(MB_ICONEXCLAMATION);
-
-              const char* STRopen = (child.info.toStdString()).c_str();
-
-              system(STRopen);
-
-              QMessageBox::about(this,"Спрацював таймер!","Відкрито файл: " + child.info);
-
-
-
-            }else{
-
-              PLOG_DEBUG << "alarm timer with info,QMessageBox";
-              MessageBeep(MB_ICONEXCLAMATION);
-              QMessageBox::about(this,"Спрацював таймер!","Час вичерпано!");
-
-
-            }
-
-        }else{
-            PLOG_WARNING << "error type";
-            QMessageBox::warning(this,"Помилка типу","Помилка типу");
-
-        }
-
-
-        PLOG_DEBUG << "erase timeT with this time";
-        mainList.erase(mainList.begin() + pos);
-
+if(yn){
 
         ui->listWidget->clear();
 
         PLOG_DEBUG << "rewrite listWidget";
 
         QString outString;
-        for(const timeT &print: mainList){
+
+        for(const timeT &print: GlobalList.myList){
+
             if(print.type == "budilnik"){
+
                 outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " " + " " + "Будильник " + print.info;
 
             }else if(print.type == "timer"){
+
                 if(print.info == ""){
 
                 outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " " + "Таймер";
@@ -137,13 +85,14 @@ for(const timeT &child: mainList){
             }
             ui->listWidget->addItem(outString);
         }
-    }
-    pos++;
-}
+
+        yn = false;
 
 }
 
 }
+
+
 
 
 
@@ -166,7 +115,7 @@ QString Type = "budilnik";
 
 if(( Date == QDate::currentDate() && Time > QTime::currentTime() ) || ( Date > QDate::currentDate()) ){
 
-    for(const timeT &child: mainList){
+    for(const timeT &child: GlobalList.myList){
 
         if(child.date == Date && child.time == Time){
 
@@ -181,10 +130,8 @@ if(( Date == QDate::currentDate() && Time > QTime::currentTime() ) || ( Date > Q
 
     }
 
-    PLOG_DEBUG << "created class timeT, added to list mainList";
-    timeT newNode(Time,Date,Info,Type);
+    GlobalList.addEndTimeT(Time,Date,Info,Type);
 
-    mainList.push_back(newNode);
 
 
 
@@ -226,89 +173,40 @@ void MainWindow::on_pushButton_2_clicked()
 {
     PLOG_INFO << "pressed button <add timer>";
 
-    int h = ui->lineEdit->text().toInt();
+    const QString fileway = ui->lineEdit_4->text();
 
-    int m = ui->lineEdit_2->text().toInt();
+    checks check;
 
-    int s = ui->lineEdit_3->text().toInt();
-
-
-
-    if(( h <= 0 && m <= 0 && s <= 0 ) || h >= 24 || m >= 60 || s >= 60){
-
-        PLOG_ERROR << "wrong enter, time = 0 or more then can be";
-
-        QMessageBox::warning(this,"Помилка","Некоректні дані!");
-
-        return void();
+    if(check.checkEnteredTime(ui->lineEdit->text().toInt(),ui->lineEdit_2->text().toInt(),ui->lineEdit_3->text().toInt())){
+         return void();
     }
 
-    if(h <= 0 && m <= 0 && s <= 4){
 
-    PLOG_ERROR << "wrong enter, time less then 4 seconds";
-    QMessageBox::warning(this,"Помилка","Мінімальний час таймера - 5 секунд!");
+    QDate EnteredDate;
+    QTime EnteredTime;
+    change a;
+    a.timerToTimeT(ui->lineEdit->text().toInt(),ui->lineEdit_2->text().toInt(),ui->lineEdit_3->text().toInt(),EnteredDate,EnteredTime);
 
-    return void();
-    }
-
-    QDate resD = QDate::currentDate();
-
-    QTime resT = QTime::currentTime();
-
-    int resSecond = resT.second();
-    int resMinute = resT.minute();
-    int resHour =  resT.hour();
-
-    while(h != 0 || m != 0 || s != 0){
-
-        if(resSecond + s >= 60){
-            resSecond = resSecond + s - 60;
-            resMinute = resMinute + 1;
-            s = 0;
-        }else{
-            resSecond = resSecond + s;
-            s = 0;
-        }
-
-        if(resMinute + m >= 60){
-            resMinute = resMinute + m - 60;
-            resHour = resHour + 1;
-            m = 0;
-        }else{
-            resMinute = resMinute + m;
-            m = 0;
-        }
-
-        if(resHour + h >= 24){
-            resHour = resHour + h - 24;
-            h = 0;
-            resD = resD.addDays(1);
-        }else{
-            resHour = resHour + h;
-            h = 0;
-        }
-
-        PLOG_DEBUG << "changed sec,m,h to good format";
-
-        const QString fileway = ui->lineEdit_4->text();
+    GlobalList.addEndTimeT(EnteredTime,EnteredDate,fileway,"timer");
 
 
-        PLOG_DEBUG << "created class timeT, added to list mainList";
-     mainList.push_back(timeT(QTime(resHour,resMinute,resSecond),resD,fileway,"timer"));
+
+
 
 
      PLOG_NONE << "add timer string to listWidget 2 variants - with path to open or without";
       QString outString;
      if(fileway != "" || fileway != nullptr){
-
-         QMessageBox::about(this,"Додано успішно",resD.toString(typeDate) + " " + QTime(resHour,resMinute,resSecond).toString(typeTime) + " "
+         PLOG_NONE << "QMessageBox that timer added";
+         QMessageBox::about(this,"Додано успішно",EnteredDate.toString(typeDate) + " " + EnteredTime.toString(typeTime) + " "
                             + "Таймер \nЯкщо шлях вірний,то по закінченню часу відкриється файл: " + fileway);
 
-         outString = resD.toString(typeDate) + " " + QTime(resHour,resMinute,resSecond).toString(typeTime) + " "
+         outString = EnteredDate.toString(typeDate) + " " + EnteredTime.toString(typeTime) + " "
                  + "Таймер, відкриває файл: " + fileway;
      }else{
-         QMessageBox::about(this,"Додано успішно",resD.toString(typeDate) + " " + QTime(resHour,resMinute,resSecond).toString(typeTime) + " " + "Таймер");
-         outString = resD.toString(typeDate) + " " + QTime(resHour,resMinute,resSecond).toString(typeTime) + " " + "Таймер";
+         PLOG_NONE << "QMessageBox that timer added";
+         QMessageBox::about(this,"Додано успішно",EnteredDate.toString(typeDate) + " " + EnteredTime.toString(typeTime) + " " + "Таймер");
+         outString = EnteredDate.toString(typeDate) + " " + EnteredTime.toString(typeTime) + " " + "Таймер";
 
      }
 
@@ -323,7 +221,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 
 
-    }
+
 }
 
 
@@ -331,13 +229,74 @@ void MainWindow::on_radioButton_3_clicked()
 {
     PLOG_INFO << "Pressed radiobutton hh:mm:ss";
     typeTime = "hh:mm:ss";
+
+    ui->listWidget->clear();
+
+    PLOG_DEBUG << "rewrite listWidget";
+
+    QString outString;
+
+    for(const timeT &print: GlobalList.myList){
+
+        if(print.type == "budilnik"){
+
+            outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " " + " " + "Будильник " + print.info;
+
+        }else if(print.type == "timer"){
+
+            if(print.info == ""){
+
+            outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " " + "Таймер";
+
+            }else{
+
+            outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " "
+                    + "Таймер, відкриває файл: " + print.info;
+
+            }
+        }else{
+            QMessageBox::warning(this,"Помилка типу","Помилка типу");
+        }
+        ui->listWidget->addItem(outString);
+    }
 }
+
 
 
 void MainWindow::on_radioButton_4_clicked()
 {
     PLOG_INFO << "Pressed radiobutton hh:mm";
     typeTime = "hh:mm";
+
+    ui->listWidget->clear();
+
+    PLOG_DEBUG << "rewrite listWidget";
+
+    QString outString;
+
+    for(const timeT &print: GlobalList.myList){
+
+        if(print.type == "budilnik"){
+
+            outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " " + " " + "Будильник " + print.info;
+
+        }else if(print.type == "timer"){
+
+            if(print.info == ""){
+
+            outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " " + "Таймер";
+
+            }else{
+
+            outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " "
+                    + "Таймер, відкриває файл: " + print.info;
+
+            }
+        }else{
+            QMessageBox::warning(this,"Помилка типу","Помилка типу");
+        }
+        ui->listWidget->addItem(outString);
+    }
 }
 
 
@@ -345,6 +304,37 @@ void MainWindow::on_radioButton_5_clicked()
 {
     PLOG_INFO << "Pressed radiobutton HH.m.s";
     typeTime = "HH.m.s";
+
+    ui->listWidget->clear();
+
+    PLOG_DEBUG << "rewrite listWidget";
+
+    QString outString;
+
+    for(const timeT &print: GlobalList.myList){
+
+        if(print.type == "budilnik"){
+
+            outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " " + " " + "Будильник " + print.info;
+
+        }else if(print.type == "timer"){
+
+            if(print.info == ""){
+
+            outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " " + "Таймер";
+
+            }else{
+
+            outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " "
+                    + "Таймер, відкриває файл: " + print.info;
+
+            }
+        }else{
+            QMessageBox::warning(this,"Помилка типу","Помилка типу");
+        }
+        ui->listWidget->addItem(outString);
+    }
+
 }
 
 

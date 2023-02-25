@@ -53,3 +53,341 @@
 2023-02-12 13:28:32.140 NONE  [8656] [MainWindow::on_pushButton_2_clicked@300] add timer string to listWidget 2 variants - with path to open or without
 2023-02-12 13:28:33.160 NONE  [8656] [MainWindow::on_pushButton_2_clicked@317] set timer widgets to basic
 2023-02-12 13:28:34.459 VERB  [8656] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 18:41:49.352 VERB  [11204] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 18:41:52.834 INFO  [11204] [MainWindow::on_pushButton_2_clicked@169] pressed button <add timer>
+2023-02-25 18:41:52.834 DEBUG [11204] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 18:41:52.834 DEBUG [11204] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:41:52.834 NONE  [11204] [MainWindow::on_pushButton_2_clicked@208] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 18:41:53.677 NONE  [11204] [MainWindow::on_pushButton_2_clicked@225] set timer widgets to basic
+2023-02-25 18:41:56.049 INFO  [11204] [MainWindow::on_pushButton_clicked@98] pressed button <add budilnik>
+2023-02-25 18:41:56.049 DEBUG [11204] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:41:56.049 NONE  [11204] [MainWindow::on_pushButton_clicked@133] QMessageBox that budilnik added
+2023-02-25 18:41:56.596 NONE  [11204] [MainWindow::on_pushButton_clicked@137] widget timeEdit set time curr, info line set void
+2023-02-25 18:41:56.597 NONE  [11204] [MainWindow::on_pushButton_clicked@143] add budilnik string to listWidget
+2023-02-25 18:41:57.361 DEBUG [11204] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 18:41:57.361 DEBUG [11204] [checks::checkTimeT@163] timeT timer time
+2023-02-25 18:41:57.361 DEBUG [11204] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 18:41:58.310 DEBUG [11204] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 18:41:58.310 DEBUG [11204] [MainWindow::TimerSlot@60] rewrite listWidget
+2023-02-25 18:41:59.360 VERB  [11204] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 18:47:38.082 VERB  [236] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 18:47:44.438 INFO  [236] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 18:47:44.438 DEBUG [236] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 18:47:44.438 DEBUG [236] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:47:44.438 NONE  [236] [MainWindow::on_pushButton_2_clicked@213] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 18:47:44.438 NONE  [236] [MainWindow::on_pushButton_2_clicked@223] QMessageBox that timer added
+2023-02-25 18:47:45.242 NONE  [236] [MainWindow::on_pushButton_2_clicked@231] set timer widgets to basic
+2023-02-25 18:47:49.088 DEBUG [236] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 18:47:49.088 DEBUG [236] [checks::checkTimeT@163] timeT timer time
+2023-02-25 18:47:49.088 DEBUG [236] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 18:47:50.443 DEBUG [236] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 18:47:50.443 DEBUG [236] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 18:47:52.787 VERB  [236] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 18:53:04.214 VERB  [5736] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 18:53:05.972 INFO  [5736] [MainWindow::on_radioButton_5_clicked@260] Pressed radiobutton HH.m.s
+2023-02-25 18:53:09.027 INFO  [5736] [MainWindow::on_pushButton_clicked@103] pressed button <add budilnik>
+2023-02-25 18:53:09.027 DEBUG [5736] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:53:09.028 NONE  [5736] [MainWindow::on_pushButton_clicked@138] QMessageBox that budilnik added
+2023-02-25 18:53:10.639 NONE  [5736] [MainWindow::on_pushButton_clicked@142] widget timeEdit set time curr, info line set void
+2023-02-25 18:53:10.639 NONE  [5736] [MainWindow::on_pushButton_clicked@148] add budilnik string to listWidget
+2023-02-25 18:53:11.779 INFO  [5736] [MainWindow::on_radioButton_5_clicked@260] Pressed radiobutton HH.m.s
+2023-02-25 18:53:15.795 INFO  [5736] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 18:53:15.795 DEBUG [5736] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 18:53:15.795 DEBUG [5736] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:53:15.795 NONE  [5736] [MainWindow::on_pushButton_2_clicked@213] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 18:53:15.795 NONE  [5736] [MainWindow::on_pushButton_2_clicked@223] QMessageBox that timer added
+2023-02-25 18:53:16.535 NONE  [5736] [MainWindow::on_pushButton_2_clicked@231] set timer widgets to basic
+2023-02-25 18:53:17.364 INFO  [5736] [MainWindow::on_radioButton_5_clicked@260] Pressed radiobutton HH.m.s
+2023-02-25 18:53:22.846 VERB  [5736] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 18:53:55.891 VERB  [8240] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 18:53:58.579 INFO  [8240] [MainWindow::on_pushButton_clicked@103] pressed button <add budilnik>
+2023-02-25 18:53:58.579 DEBUG [8240] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:53:58.579 NONE  [8240] [MainWindow::on_pushButton_clicked@138] QMessageBox that budilnik added
+2023-02-25 18:53:59.367 NONE  [8240] [MainWindow::on_pushButton_clicked@142] widget timeEdit set time curr, info line set void
+2023-02-25 18:53:59.367 NONE  [8240] [MainWindow::on_pushButton_clicked@148] add budilnik string to listWidget
+2023-02-25 18:54:00.979 INFO  [8240] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 18:54:00.979 DEBUG [8240] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 18:54:00.979 DEBUG [8240] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:54:00.979 NONE  [8240] [MainWindow::on_pushButton_2_clicked@213] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 18:54:00.979 NONE  [8240] [MainWindow::on_pushButton_2_clicked@223] QMessageBox that timer added
+2023-02-25 18:54:01.814 NONE  [8240] [MainWindow::on_pushButton_2_clicked@231] set timer widgets to basic
+2023-02-25 18:54:02.908 INFO  [8240] [MainWindow::on_radioButton_5_clicked@260] Pressed radiobutton HH.m.s
+2023-02-25 18:54:06.235 INFO  [8240] [MainWindow::on_pushButton_clicked@103] pressed button <add budilnik>
+2023-02-25 18:54:06.236 DEBUG [8240] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:54:06.236 NONE  [8240] [MainWindow::on_pushButton_clicked@138] QMessageBox that budilnik added
+2023-02-25 18:54:06.903 NONE  [8240] [MainWindow::on_pushButton_clicked@142] widget timeEdit set time curr, info line set void
+2023-02-25 18:54:06.903 NONE  [8240] [MainWindow::on_pushButton_clicked@148] add budilnik string to listWidget
+2023-02-25 18:54:08.755 INFO  [8240] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 18:54:08.755 DEBUG [8240] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 18:54:08.755 DEBUG [8240] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:54:08.755 NONE  [8240] [MainWindow::on_pushButton_2_clicked@213] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 18:54:08.755 NONE  [8240] [MainWindow::on_pushButton_2_clicked@223] QMessageBox that timer added
+2023-02-25 18:54:09.512 NONE  [8240] [MainWindow::on_pushButton_2_clicked@231] set timer widgets to basic
+2023-02-25 18:54:11.827 INFO  [8240] [MainWindow::on_pushButton_clicked@103] pressed button <add budilnik>
+2023-02-25 18:54:11.827 DEBUG [8240] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:54:11.827 NONE  [8240] [MainWindow::on_pushButton_clicked@138] QMessageBox that budilnik added
+2023-02-25 18:54:12.495 NONE  [8240] [MainWindow::on_pushButton_clicked@142] widget timeEdit set time curr, info line set void
+2023-02-25 18:54:12.495 NONE  [8240] [MainWindow::on_pushButton_clicked@148] add budilnik string to listWidget
+2023-02-25 18:54:13.876 DEBUG [8240] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 18:54:13.876 DEBUG [8240] [checks::checkTimeT@163] timeT timer time
+2023-02-25 18:54:13.876 DEBUG [8240] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 18:54:15.209 DEBUG [8240] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 18:54:15.209 DEBUG [8240] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 18:54:17.219 INFO  [8240] [MainWindow::on_radioButton_5_clicked@260] Pressed radiobutton HH.m.s
+2023-02-25 18:54:30.465 VERB  [8240] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 18:57:09.345 VERB  [10072] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 18:57:14.810 INFO  [10072] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 18:57:14.810 DEBUG [10072] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 18:57:14.810 DEBUG [10072] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:57:14.810 NONE  [10072] [MainWindow::on_pushButton_2_clicked@213] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 18:57:14.810 NONE  [10072] [MainWindow::on_pushButton_2_clicked@223] QMessageBox that timer added
+2023-02-25 18:57:15.821 NONE  [10072] [MainWindow::on_pushButton_2_clicked@231] set timer widgets to basic
+2023-02-25 18:57:19.331 DEBUG [10072] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 18:57:19.331 DEBUG [10072] [checks::checkTimeT@163] timeT timer time
+2023-02-25 18:57:19.331 DEBUG [10072] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 18:57:20.607 DEBUG [10072] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 18:57:20.607 DEBUG [10072] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 18:57:21.570 INFO  [10072] [MainWindow::on_radioButton_5_clicked@260] Pressed radiobutton HH.m.s
+2023-02-25 18:57:24.714 VERB  [10072] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 18:58:44.449 VERB  [6076] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 18:58:46.873 INFO  [6076] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 18:58:46.873 DEBUG [6076] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 18:58:46.873 DEBUG [6076] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 18:58:46.873 NONE  [6076] [MainWindow::on_pushButton_2_clicked@213] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 18:58:46.873 NONE  [6076] [MainWindow::on_pushButton_2_clicked@223] QMessageBox that timer added
+2023-02-25 18:58:47.758 NONE  [6076] [MainWindow::on_pushButton_2_clicked@231] set timer widgets to basic
+2023-02-25 18:58:51.439 DEBUG [6076] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 18:58:51.439 DEBUG [6076] [checks::checkTimeT@163] timeT timer time
+2023-02-25 18:58:51.439 DEBUG [6076] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 18:58:52.270 DEBUG [6076] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 18:58:52.270 DEBUG [6076] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 18:58:54.281 INFO  [6076] [MainWindow::on_radioButton_5_clicked@260] Pressed radiobutton HH.m.s
+2023-02-25 18:58:56.144 VERB  [6076] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 18:59:35.872 VERB  [8740] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 18:59:41.239 VERB  [8740] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 19:12:26.855 VERB  [4824] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 19:12:30.282 INFO  [4824] [MainWindow::on_pushButton_clicked@103] pressed button <add budilnik>
+2023-02-25 19:12:30.282 DEBUG [4824] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:12:30.282 NONE  [4824] [MainWindow::on_pushButton_clicked@138] QMessageBox that budilnik added
+2023-02-25 19:12:31.078 NONE  [4824] [MainWindow::on_pushButton_clicked@142] widget timeEdit set time curr, info line set void
+2023-02-25 19:12:31.078 NONE  [4824] [MainWindow::on_pushButton_clicked@148] add budilnik string to listWidget
+2023-02-25 19:12:34.226 INFO  [4824] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:12:34.226 ERROR [4824] [checks::checkEnteredTime@205] wrong enter, time = 0 or more then can be
+2023-02-25 19:12:39.410 INFO  [4824] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:12:39.410 ERROR [4824] [checks::checkEnteredTime@205] wrong enter, time = 0 or more then can be
+2023-02-25 19:12:42.570 INFO  [4824] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:12:42.570 DEBUG [4824] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:12:42.570 DEBUG [4824] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:12:42.570 NONE  [4824] [MainWindow::on_pushButton_2_clicked@206] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:12:42.570 NONE  [4824] [MainWindow::on_pushButton_2_clicked@216] QMessageBox that timer added
+2023-02-25 19:12:43.838 NONE  [4824] [MainWindow::on_pushButton_2_clicked@224] set timer widgets to basic
+2023-02-25 19:12:46.674 INFO  [4824] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:12:46.674 ERROR [4824] [checks::checkEnteredTime@205] wrong enter, time = 0 or more then can be
+2023-02-25 19:12:50.603 INFO  [4824] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:12:50.603 ERROR [4824] [checks::checkEnteredTime@213] wrong enter, time less then 4 seconds
+2023-02-25 19:12:54.810 INFO  [4824] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:12:54.810 DEBUG [4824] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:12:54.810 DEBUG [4824] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:12:54.810 NONE  [4824] [MainWindow::on_pushButton_2_clicked@206] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:12:54.810 NONE  [4824] [MainWindow::on_pushButton_2_clicked@216] QMessageBox that timer added
+2023-02-25 19:12:55.782 NONE  [4824] [MainWindow::on_pushButton_2_clicked@224] set timer widgets to basic
+2023-02-25 19:12:59.849 DEBUG [4824] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:12:59.849 DEBUG [4824] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:12:59.849 DEBUG [4824] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:13:01.512 DEBUG [4824] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:13:01.512 DEBUG [4824] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:13:02.768 VERB  [4824] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 19:13:58.348 VERB  [1996] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 19:14:01.705 INFO  [1996] [MainWindow::on_pushButton_clicked@103] pressed button <add budilnik>
+2023-02-25 19:14:01.705 DEBUG [1996] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:14:01.706 NONE  [1996] [MainWindow::on_pushButton_clicked@138] QMessageBox that budilnik added
+2023-02-25 19:14:02.510 NONE  [1996] [MainWindow::on_pushButton_clicked@142] widget timeEdit set time curr, info line set void
+2023-02-25 19:14:02.510 NONE  [1996] [MainWindow::on_pushButton_clicked@148] add budilnik string to listWidget
+2023-02-25 19:14:04.537 INFO  [1996] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:14:04.537 DEBUG [1996] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:14:04.537 DEBUG [1996] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:14:04.537 NONE  [1996] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:14:04.537 NONE  [1996] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:14:05.293 NONE  [1996] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:14:08.505 INFO  [1996] [MainWindow::on_radioButton_3_clicked@230] Pressed radiobutton hh:mm:ss
+2023-02-25 19:14:09.349 DEBUG [1996] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:14:09.349 DEBUG [1996] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:14:09.349 DEBUG [1996] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:14:10.495 DEBUG [1996] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:14:10.495 DEBUG [1996] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:14:16.434 VERB  [1996] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 19:16:45.093 VERB  [9904] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 19:16:48.336 INFO  [9904] [MainWindow::on_pushButton_clicked@103] pressed button <add budilnik>
+2023-02-25 19:16:48.336 DEBUG [9904] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:16:48.336 NONE  [9904] [MainWindow::on_pushButton_clicked@138] QMessageBox that budilnik added
+2023-02-25 19:16:49.323 NONE  [9904] [MainWindow::on_pushButton_clicked@142] widget timeEdit set time curr, info line set void
+2023-02-25 19:16:49.324 NONE  [9904] [MainWindow::on_pushButton_clicked@148] add budilnik string to listWidget
+2023-02-25 19:16:51.744 INFO  [9904] [MainWindow::on_radioButton_5_clicked@305] Pressed radiobutton HH.m.s
+2023-02-25 19:16:51.744 DEBUG [9904] [MainWindow::on_radioButton_5_clicked@310] rewrite listWidget
+2023-02-25 19:16:53.801 INFO  [9904] [MainWindow::on_radioButton_4_clicked@268] Pressed radiobutton hh:mm
+2023-02-25 19:16:53.801 DEBUG [9904] [MainWindow::on_radioButton_4_clicked@273] rewrite listWidget
+2023-02-25 19:16:55.096 INFO  [9904] [MainWindow::on_radioButton_3_clicked@230] Pressed radiobutton hh:mm:ss
+2023-02-25 19:16:55.096 DEBUG [9904] [MainWindow::on_radioButton_3_clicked@235] rewrite listWidget
+2023-02-25 19:16:56.518 VERB  [9904] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 19:19:29.093 VERB  [10104] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 19:19:35.614 INFO  [10104] [MainWindow::on_pushButton_clicked@103] pressed button <add budilnik>
+2023-02-25 19:19:35.615 DEBUG [10104] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:19:35.615 NONE  [10104] [MainWindow::on_pushButton_clicked@138] QMessageBox that budilnik added
+2023-02-25 19:19:36.532 NONE  [10104] [MainWindow::on_pushButton_clicked@142] widget timeEdit set time curr, info line set void
+2023-02-25 19:19:36.532 NONE  [10104] [MainWindow::on_pushButton_clicked@148] add budilnik string to listWidget
+2023-02-25 19:19:40.679 INFO  [10104] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:19:40.679 DEBUG [10104] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:19:40.679 DEBUG [10104] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:19:40.679 NONE  [10104] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:19:40.679 NONE  [10104] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:19:42.066 NONE  [10104] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:19:45.079 DEBUG [10104] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:19:45.079 DEBUG [10104] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:19:45.079 DEBUG [10104] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:19:46.612 DEBUG [10104] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:19:46.612 DEBUG [10104] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:19:47.812 VERB  [10104] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 19:20:12.816 VERB  [8592] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 19:20:22.286 INFO  [8592] [MainWindow::on_pushButton_clicked@103] pressed button <add budilnik>
+2023-02-25 19:20:22.287 DEBUG [8592] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:20:22.287 NONE  [8592] [MainWindow::on_pushButton_clicked@138] QMessageBox that budilnik added
+2023-02-25 19:20:23.179 NONE  [8592] [MainWindow::on_pushButton_clicked@142] widget timeEdit set time curr, info line set void
+2023-02-25 19:20:23.179 NONE  [8592] [MainWindow::on_pushButton_clicked@148] add budilnik string to listWidget
+2023-02-25 19:20:26.335 INFO  [8592] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:20:26.335 DEBUG [8592] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:20:26.335 DEBUG [8592] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:20:26.335 NONE  [8592] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:20:26.335 NONE  [8592] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:20:27.122 NONE  [8592] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:20:30.439 INFO  [8592] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:20:30.439 DEBUG [8592] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:20:30.439 DEBUG [8592] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:20:30.439 NONE  [8592] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:20:30.439 NONE  [8592] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:20:31.410 NONE  [8592] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:20:35.916 DEBUG [8592] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:20:35.916 DEBUG [8592] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:20:35.916 DEBUG [8592] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:20:37.326 DEBUG [8592] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:20:37.326 DEBUG [8592] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:20:39.079 INFO  [8592] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:20:39.079 DEBUG [8592] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:20:39.079 DEBUG [8592] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:20:39.079 NONE  [8592] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:20:39.079 NONE  [8592] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:20:40.010 NONE  [8592] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:20:56.486 INFO  [8592] [MainWindow::on_radioButton_3_clicked@230] Pressed radiobutton hh:mm:ss
+2023-02-25 19:20:56.486 DEBUG [8592] [MainWindow::on_radioButton_3_clicked@235] rewrite listWidget
+2023-02-25 19:21:00.970 DEBUG [8592] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:21:00.970 DEBUG [8592] [checks::checkTimeT@145] timeT budilnik time
+2023-02-25 19:21:00.970 DEBUG [8592] [checks::checkTimeT@148] alarm budilnik with info,QMessageBox
+2023-02-25 19:22:08.251 DEBUG [8592] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:22:08.252 DEBUG [8592] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:22:14.054 INFO  [8592] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:22:14.054 DEBUG [8592] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:22:14.054 DEBUG [8592] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:22:14.054 NONE  [8592] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:22:14.054 NONE  [8592] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:22:14.921 NONE  [8592] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:22:20.216 VERB  [8592] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 19:23:25.525 VERB  [1952] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 19:23:29.253 INFO  [1952] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:23:29.253 DEBUG [1952] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:23:29.253 DEBUG [1952] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:23:29.253 NONE  [1952] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:23:29.253 NONE  [1952] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:23:30.049 NONE  [1952] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:23:31.525 INFO  [1952] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:23:31.525 DEBUG [1952] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:23:31.525 DEBUG [1952] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:23:31.525 NONE  [1952] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:23:31.525 NONE  [1952] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:23:32.202 NONE  [1952] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:23:34.068 INFO  [1952] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:23:34.068 DEBUG [1952] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:23:34.068 DEBUG [1952] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:23:34.068 NONE  [1952] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:23:34.068 NONE  [1952] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:23:34.535 DEBUG [1952] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:23:34.535 DEBUG [1952] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:23:34.535 DEBUG [1952] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:23:34.779 DEBUG [1952] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:23:34.779 DEBUG [1952] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:23:35.632 NONE  [1952] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:23:36.544 DEBUG [1952] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:23:36.544 DEBUG [1952] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:23:36.544 DEBUG [1952] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:23:38.339 DEBUG [1952] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:23:38.339 DEBUG [1952] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:23:39.553 DEBUG [1952] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:23:39.553 DEBUG [1952] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:23:39.553 DEBUG [1952] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:23:40.882 DEBUG [1952] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:23:40.882 DEBUG [1952] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:23:41.702 INFO  [1952] [MainWindow::on_radioButton_3_clicked@230] Pressed radiobutton hh:mm:ss
+2023-02-25 19:23:41.702 DEBUG [1952] [MainWindow::on_radioButton_3_clicked@235] rewrite listWidget
+2023-02-25 19:23:45.461 INFO  [1952] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:23:45.461 DEBUG [1952] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:23:45.461 DEBUG [1952] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:23:45.461 NONE  [1952] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:23:45.461 NONE  [1952] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:23:46.169 NONE  [1952] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:23:48.181 INFO  [1952] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:23:48.182 DEBUG [1952] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:23:48.182 DEBUG [1952] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:23:48.182 NONE  [1952] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:23:48.182 NONE  [1952] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:23:49.216 NONE  [1952] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:23:50.564 DEBUG [1952] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:23:50.564 DEBUG [1952] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:23:50.564 DEBUG [1952] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:23:52.099 DEBUG [1952] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:23:52.099 DEBUG [1952] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:23:53.564 DEBUG [1952] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:23:53.564 DEBUG [1952] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:23:53.564 DEBUG [1952] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:23:54.541 DEBUG [1952] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:23:54.541 DEBUG [1952] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:23:55.340 INFO  [1952] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:23:55.341 DEBUG [1952] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:23:55.341 DEBUG [1952] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:23:55.341 NONE  [1952] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:23:55.341 NONE  [1952] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:23:56.152 NONE  [1952] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:23:57.901 INFO  [1952] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:23:57.901 DEBUG [1952] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:23:57.901 DEBUG [1952] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:23:57.901 NONE  [1952] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:23:57.901 NONE  [1952] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:23:58.648 NONE  [1952] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:23:59.885 INFO  [1952] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:23:59.885 DEBUG [1952] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:23:59.885 DEBUG [1952] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:23:59.885 NONE  [1952] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:23:59.885 NONE  [1952] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:24:00.568 DEBUG [1952] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:24:00.568 DEBUG [1952] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:24:00.568 DEBUG [1952] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:24:07.043 DEBUG [1952] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:24:07.043 DEBUG [1952] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:24:07.568 DEBUG [1952] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:24:07.568 DEBUG [1952] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:24:07.568 DEBUG [1952] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:24:09.219 DEBUG [1952] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:24:09.219 DEBUG [1952] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:24:09.219 WARN  [1952] [checks::checkTimeT@187] error type
+2023-02-25 19:24:10.843 DEBUG [1952] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:24:10.843 DEBUG [1952] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:24:12.016 NONE  [1952] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:24:27.644 INFO  [1952] [MainWindow::on_pushButton_2_clicked@174] pressed button <add timer>
+2023-02-25 19:24:27.644 DEBUG [1952] [change::timerToTimeT@125] changed sec,m,h to good format
+2023-02-25 19:24:27.644 DEBUG [1952] [DataList::addEndTimeT@70] created class timeT, added to list mainList
+2023-02-25 19:24:27.644 NONE  [1952] [MainWindow::on_pushButton_2_clicked@197] add timer string to listWidget 2 variants - with path to open or without
+2023-02-25 19:24:27.644 NONE  [1952] [MainWindow::on_pushButton_2_clicked@207] QMessageBox that timer added
+2023-02-25 19:24:28.568 NONE  [1952] [MainWindow::on_pushButton_2_clicked@215] set timer widgets to basic
+2023-02-25 19:24:32.629 DEBUG [1952] [checks::checkTimeT@140] time and date = timeT
+2023-02-25 19:24:32.629 DEBUG [1952] [checks::checkTimeT@163] timeT timer time
+2023-02-25 19:24:32.629 DEBUG [1952] [checks::checkTimeT@179] alarm timer with info,QMessageBox
+2023-02-25 19:24:33.829 DEBUG [1952] [DataList::deleteTimeT@77] erase timeT with this time
+2023-02-25 19:24:33.830 DEBUG [1952] [MainWindow::TimerSlot@61] rewrite listWidget
+2023-02-25 19:24:38.195 VERB  [1952] [MainWindow::~MainWindow@33] PROGRAM CLOSED

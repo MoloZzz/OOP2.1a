@@ -235,41 +235,6 @@ public:
 };
 
 
-/*
-class workWithListWidget : MainWindow{
-public:
-    void rewriteWidget(DataList currList){
-
-        PLOG_DEBUG << "rewrite listWidget";
-
-        QString outString;
-
-        for(const timeT &print: currList.myList){
-            if(print.type == "budilnik"){
-                outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " " + " " + "Будильник " + print.info;
-
-            }else if(print.type == "timer"){
-                if(print.info == ""){
-
-                outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " " + "Таймер";
-
-                }else{
-
-                outString = print.date.toString(typeDate) + " " + print.time.toString(typeTime) + " "
-                        + "Таймер, відкриває файл: " + print.info;
-
-                }
-            }else{
-                QMessageBox::warning(this,"Помилка типу","Помилка типу");
-            }
-
-        }
-    }
-
-
-
-
-};*/
 
 
 QT_BEGIN_NAMESPACE

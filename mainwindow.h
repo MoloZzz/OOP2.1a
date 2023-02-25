@@ -277,20 +277,21 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-    QString typeDate;
-    QString typeTime;
 
 
-    Ui::MainWindow *ui;
+
+
 
 private:
 
-
+    Ui::MainWindow *ui;
     QTimer *timer;
 
     QTime time;
     QDate date;
 
+    QString typeDate;
+    QString typeTime;
 
 private slots:
     void TimerSlot();

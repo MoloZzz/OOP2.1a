@@ -391,3 +391,9 @@
 2023-02-25 19:24:33.829 DEBUG [1952] [DataList::deleteTimeT@77] erase timeT with this time
 2023-02-25 19:24:33.830 DEBUG [1952] [MainWindow::TimerSlot@61] rewrite listWidget
 2023-02-25 19:24:38.195 VERB  [1952] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 19:38:49.208 VERB  [2696] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 19:42:01.542 VERB  [2696] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 20:05:06.366 VERB  [11840] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 20:05:07.944 VERB  [11840] [MainWindow::~MainWindow@33] PROGRAM CLOSED
+2023-02-25 20:54:07.418 VERB  [7716] [MainWindow::MainWindow@27] PROGRAM OPENED
+2023-02-25 21:07:53.664 VERB  [7716] [MainWindow::~MainWindow@33] PROGRAM CLOSED
